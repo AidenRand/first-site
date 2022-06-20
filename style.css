@@ -1,5 +1,6 @@
 :root {
-    --color:rgb(53, 99, 96)
+    --myColor:rgb(53, 99, 96);
+    --myColor2: #fff0d4;   
 }
 
 * {
@@ -9,11 +10,12 @@
 }
 
 body {
-    height: 3000px;
+    height: 100%;
+    
 }
 .header {
     display: flex;
-    background-color:var(--color);
+    background-color:var(--myColor);
     justify-content: space-around;
     
 }
@@ -23,7 +25,7 @@ body {
     font-size: 4em;
     font-weight: 900;
     font-family: 'Fascinate Inline', cursive;
-    color: #fff0d4;
+    color: var(--myColor2);
     
 }
 
@@ -38,7 +40,7 @@ ul {
 
 a {  
     text-decoration: none;
-    color: #fff0d4;   
+    color: var(--myColor2);   
 }
 
 .link {
@@ -48,15 +50,15 @@ a {
 }
 
   ul a:hover {
-    background-color: #fff0d4;
-    color:var(--color);   
+    background-color: var(--myColor2);
+    color: var(--myColor);   
 }
 
 .top-body {
     display: flex;
     justify-content: center;
     gap: 100px;
-    background-color:var(--color);
+    background-color:var(--myColor);
     height: 600px;
     align-items: center;
         
@@ -73,7 +75,7 @@ a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 900;
     width: 450px;
-    color: antiquewhite;
+    color: var(--myColor2);
     
 }
 
@@ -81,7 +83,7 @@ a {
     font-size: 18px;
     width: 500px;
     margin-top: 10px;
-    color: antiquewhite;
+    color: var(--myColor2);
     
 }
 
@@ -94,29 +96,27 @@ a {
 }
 
 .button a {
-    border: 0px solid red;
+    border: 0px solid ;
     border-radius: 10px;
-    background-color: #fff0d4;
-    color: var(--color);
+    background-color: var(--myColor2);
+    color: var(--myColor);
     padding: 5px;
     position: relative; top: 15px;
 }
 
-.mid-body {
-    display: flex;
-    justify-content: center;
-    
-
-}
 
 .info-text {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 50px;
+    margin-bottom: 50px;
     font-size: 3em;
     font-weight: 900;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--color);   
+    color: var(--myColor);   
     font-family: 'Fredoka One', cursive;
+    align-self: center;
 }
 
 .gib-images img {
@@ -125,15 +125,13 @@ a {
     width: auto;
     border: 0px solid;
     border-radius: 30px;
-    flex-wrap: wrap;
-    border: 6px solid var(--color);
+    border: 6px solid var(--myColor);
 }
 
 .gib-images {
     display: flex;
     gap: 100px;
     justify-content: center;
-    margin-top: 30px;
 }
 
 .gib {
@@ -144,15 +142,15 @@ a {
 
 .mid-text {
     display: flex;
-    gap: 140px;
+    gap: 135px;
     margin-top: 25px;
     justify-content: center;
-    position: relative; left: 2px;  
+    position: relative; left: -1px;  
 }
 
 
 .gib-text {
-    color: var(--color) ;
+    color: var(--myColor);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 600;
     font-size: 1.5em;
@@ -165,7 +163,7 @@ a {
     display: flex;
     font-size: 3.5em;
     text-align: center;
-    background-color: rgb(223, 222, 222);
+    background-color: rgb(247, 239, 229);
     height: 500px;
     margin-top: 150px;
 }
@@ -190,7 +188,7 @@ a {
 
 .container {
     display: flex;
-    background-color: var(--color);
+    background-color: var(--myColor);
     margin-top: 100px;
     margin-left: 300px;
     margin-right: 300px;
@@ -198,17 +196,25 @@ a {
     border-radius: 10px;
     justify-content: space-between;
     
+    margin-bottom: 100px;
+    
 
 }
 
-.text-at-bottom {
+.card-contents {
     display: flex;
-    width: 250px;   
+    width: 350px;
+    align-self: center;   
+    margin-left: 100px;
 }
 
 .bottom-text {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;  
+    font-size: 2em;
+    width: 700px;
+    color: var(--myColor2);
+    
 }
 
 .bottom-text span {
@@ -219,9 +225,6 @@ a {
     display: flex;
     align-self: center;
     margin-right: 100px;
-    
-    
-
 }
 
 .bottom-link a {
@@ -230,5 +233,36 @@ a {
     padding: 5px;
     padding-left:20px ;
     padding-right: 20px;
+}
+
+.footer {
+    
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    background: rgb(100, 85, 56);
+    flex-direction: row;
+
+}
+
+.footer a {
+    display: flex;
+    color:rgb(100, 85, 56) ;
+    border: 2px solid rgb(255, 226, 185);
+    background-color: rgb(255, 226, 185);
+    border-radius: 10px;
+    padding: 3px;
+    margin-left: 10px;
+}
+
+.footer-text {
+    display: flex;
+    color: rgb(255, 226, 185);
+    font-size: 1.5em;
+    align-items: center;
 }
 
