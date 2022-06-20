@@ -1,3 +1,7 @@
+:root {
+    --color:rgb(53, 99, 96)
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +13,7 @@ body {
 }
 .header {
     display: flex;
-    background-color:rgb(53, 99, 96);
+    background-color:var(--color);
     justify-content: space-around;
     
 }
@@ -18,7 +22,7 @@ body {
     display: flex;
     font-size: 4em;
     font-weight: 900;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Fascinate Inline', cursive;
     color: #fff0d4;
     
 }
@@ -29,6 +33,7 @@ ul {
     list-style: none;     
     font-size: 1.5em;
     align-items: center;
+    font-family: 'Fascinate', cursive;
 }
 
 a {  
@@ -44,16 +49,17 @@ a {
 
   ul a:hover {
     background-color: #fff0d4;
-    color:rgb(53, 99, 96);   
+    color:var(--color);   
 }
 
 .top-body {
     display: flex;
     justify-content: center;
     gap: 100px;
-    background-color:rgb(53, 99, 96);
+    background-color:var(--color);
     height: 600px;
-    align-items: center;    
+    align-items: center;
+        
 }
 
  .left-text {
@@ -68,6 +74,7 @@ a {
     font-weight: 900;
     width: 450px;
     color: antiquewhite;
+    
 }
 
 .small-text {
@@ -90,7 +97,7 @@ a {
     border: 0px solid red;
     border-radius: 10px;
     background-color: #fff0d4;
-    color: rgb(53, 99, 96);
+    color: var(--color);
     padding: 5px;
     position: relative; top: 15px;
 }
@@ -98,6 +105,7 @@ a {
 .mid-body {
     display: flex;
     justify-content: center;
+    
 
 }
 
@@ -107,7 +115,8 @@ a {
     font-size: 3em;
     font-weight: 900;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(53, 99, 96);   
+    color: var(--color);   
+    font-family: 'Fredoka One', cursive;
 }
 
 .gib-images img {
@@ -117,7 +126,7 @@ a {
     border: 0px solid;
     border-radius: 30px;
     flex-wrap: wrap;
-    border: 6px solid rgb(53, 99, 96);
+    border: 6px solid var(--color);
 }
 
 .gib-images {
@@ -138,18 +147,88 @@ a {
     gap: 140px;
     margin-top: 25px;
     justify-content: center;
-    position: relative; left: 2px;
-    
-    
+    position: relative; left: 2px;  
 }
 
 
 .gib-text {
-    color: rgb(53, 99, 96) ;
+    color: var(--color) ;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 600;
     font-size: 1.5em;
     font-weight: 600;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 300;
 }
 
+.lower-half {
+    display: flex;
+    font-size: 3.5em;
+    text-align: center;
+    background-color: rgb(223, 222, 222);
+    height: 500px;
+    margin-top: 150px;
+}
+
+.lower-half span {
+    display: flex;
+    font-weight: 900;
+    position: relative; left: 300px;
+    justify-content: center;
+    margin-right: 40px;
+    margin-top: 30px;
+    
+}
+
+.lower-text {
+    display: flex;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.container {
+    display: flex;
+    background-color: var(--color);
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 200px;
+    border-radius: 10px;
+    justify-content: space-between;
+    
+
+}
+
+.text-at-bottom {
+    display: flex;
+    width: 250px;   
+}
+
+.bottom-text {
+    display: flex;
+    flex-direction: column;   
+}
+
+.bottom-text span {
+    font-weight: 900;
+    font-family: 'Fascinate', cursive;
+}
+.bottom-link {
+    display: flex;
+    align-self: center;
+    margin-right: 100px;
+    
+    
+
+}
+
+.bottom-link a {
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left:20px ;
+    padding-right: 20px;
+}
 
